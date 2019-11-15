@@ -36,6 +36,7 @@
 #include "widgets/check_button.h"
 #include "widgets/progress_bar.h"
 #include "widgets/color_tile.h"
+#include "widgets/edit_num.h"
 
 #ifndef AWTK_LITE
 #include "widgets/system_bar.h"
@@ -78,6 +79,7 @@ ret_t tk_widgets_init(void) {
   widget_factory_register(f, WIDGET_TYPE_POPUP, popup_create);
   widget_factory_register(f, WIDGET_TYPE_COLOR_TILE, color_tile_create);
   widget_factory_register(f, WIDGET_TYPE_GROUP_BOX, group_box_create);
+  widget_factory_register(f, WIDGET_TYPE_EDIT_NUM, edit_num_create);
 #ifndef AWTK_LITE
   widget_factory_register(f, WIDGET_TYPE_SYSTEM_BAR, system_bar_create);
   widget_factory_register(f, WIDGET_TYPE_SYSTEM_BAR_BOTTOM, system_bar_bottom_create);
